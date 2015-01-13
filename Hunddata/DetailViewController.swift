@@ -75,7 +75,8 @@ class DetailViewController: UITableViewController {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
         
         let object = objects[indexPath.row] as HunddataDog
-        cell.textLabel!.text = object.regnr
+        cell.textLabel!.text = object.dogName
+        cell.detailTextLabel!.text = object.regnr
         return cell
     }
     

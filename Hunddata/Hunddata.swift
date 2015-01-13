@@ -149,6 +149,14 @@ class Hunddata {
         let regnr = (data.substringFromIndex(startRange.location + startRange.length) as NSString).substringToIndex(endRange.location - (startRange.location + startRange.length))
         dog.regnr = regnr
         
+        // Namn
+        println(data)
+        let startRangeNamn: NSRange = data.rangeOfString("td class=\"datatext\" bgcolor=\"White\">")
+        let workdataNamn = data.substringFromIndex(startRangeNamn.location + startRangeNamn.length) as NSString
+        let endRangeNamn: NSRange = workdataNamn.rangeOfString("</td>")
+        dog.dogName = workdataNamn.substringToIndex(endRangeNamn.location)
+        
+        
         // TODO: parse other columns in table
         
         return dog
