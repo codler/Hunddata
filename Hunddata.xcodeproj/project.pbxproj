@@ -14,6 +14,11 @@
 		283C049F1A605C8A002E6A16 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 283C049E1A605C8A002E6A16 /* Images.xcassets */; };
 		283C04A21A605C8A002E6A16 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 283C04A01A605C8A002E6A16 /* LaunchScreen.xib */; };
 		283C04AE1A605C8A002E6A16 /* HunddataTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C04AD1A605C8A002E6A16 /* HunddataTests.swift */; };
+		283C04B81A619D8E002E6A16 /* Hunddata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C04B71A619D8E002E6A16 /* Hunddata.swift */; };
+		283C04BA1A62C1B2002E6A16 /* DogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 283C04B91A62C1B2002E6A16 /* DogViewController.swift */; };
+		28EAA5C71A64764A005D02FE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 28EAA5C61A64764A005D02FE /* README.md */; };
+		28EAA5CB1A64768A005D02FE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 28EAA5CA1A64768A005D02FE /* LICENSE */; };
+		28EAA5CF1A658C2B005D02FE /* Preview.png in Resources */ = {isa = PBXBuildFile; fileRef = 28EAA5CE1A658C2B005D02FE /* Preview.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +43,11 @@
 		283C04A71A605C8A002E6A16 /* HunddataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HunddataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		283C04AC1A605C8A002E6A16 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		283C04AD1A605C8A002E6A16 /* HunddataTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HunddataTests.swift; sourceTree = "<group>"; };
+		283C04B71A619D8E002E6A16 /* Hunddata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hunddata.swift; sourceTree = "<group>"; };
+		283C04B91A62C1B2002E6A16 /* DogViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DogViewController.swift; sourceTree = "<group>"; };
+		28EAA5C61A64764A005D02FE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = SOURCE_ROOT; };
+		28EAA5CA1A64768A005D02FE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		28EAA5CE1A658C2B005D02FE /* Preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Preview.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +90,13 @@
 			isa = PBXGroup;
 			children = (
 				283C04951A605C8A002E6A16 /* AppDelegate.swift */,
-				283C04971A605C8A002E6A16 /* MasterViewController.swift */,
 				283C04991A605C8A002E6A16 /* DetailViewController.swift */,
-				283C049B1A605C8A002E6A16 /* Main.storyboard */,
+				283C04B91A62C1B2002E6A16 /* DogViewController.swift */,
+				283C04B71A619D8E002E6A16 /* Hunddata.swift */,
 				283C049E1A605C8A002E6A16 /* Images.xcassets */,
 				283C04A01A605C8A002E6A16 /* LaunchScreen.xib */,
+				283C049B1A605C8A002E6A16 /* Main.storyboard */,
+				283C04971A605C8A002E6A16 /* MasterViewController.swift */,
 				283C04931A605C8A002E6A16 /* Supporting Files */,
 			);
 			path = Hunddata;
@@ -94,6 +106,9 @@
 			isa = PBXGroup;
 			children = (
 				283C04941A605C8A002E6A16 /* Info.plist */,
+				28EAA5CA1A64768A005D02FE /* LICENSE */,
+				28EAA5CE1A658C2B005D02FE /* Preview.png */,
+				28EAA5C61A64764A005D02FE /* README.md */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -164,6 +179,7 @@
 				TargetAttributes = {
 					283C048F1A605C8A002E6A16 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 9K37AQ8P25;
 					};
 					283C04A61A605C8A002E6A16 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -197,7 +213,9 @@
 			files = (
 				283C049D1A605C8A002E6A16 /* Main.storyboard in Resources */,
 				283C04A21A605C8A002E6A16 /* LaunchScreen.xib in Resources */,
+				28EAA5CB1A64768A005D02FE /* LICENSE in Resources */,
 				283C049F1A605C8A002E6A16 /* Images.xcassets in Resources */,
+				28EAA5CF1A658C2B005D02FE /* Preview.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,8 +233,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28EAA5C71A64764A005D02FE /* README.md in Sources */,
 				283C049A1A605C8A002E6A16 /* DetailViewController.swift in Sources */,
 				283C04981A605C8A002E6A16 /* MasterViewController.swift in Sources */,
+				283C04B81A619D8E002E6A16 /* Hunddata.swift in Sources */,
+				283C04BA1A62C1B2002E6A16 /* DogViewController.swift in Sources */,
 				283C04961A605C8A002E6A16 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,9 +363,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Hunddata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -352,9 +376,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Hunddata/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -411,6 +438,7 @@
 				283C04B31A605C8A002E6A16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		283C04B41A605C8A002E6A16 /* Build configuration list for PBXNativeTarget "HunddataTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +447,7 @@
 				283C04B61A605C8A002E6A16 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
